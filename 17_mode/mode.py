@@ -11,3 +11,10 @@ def mode(nums):
         >>> mode([2, 2, 3, 3, 2])
         2
     """
+    frequency = {}
+
+    for item in nums:
+        if item in frequency:
+            frequency[item] += 1
+        else:
+            frequency[item] = 1
